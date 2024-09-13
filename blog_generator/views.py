@@ -55,6 +55,7 @@ def generate_blog(request):
     else:
         return JsonResponse({'error': 'Invalid request method'}, status=405)
 
+
 def yt_title(link):
     yt = YouTube(link)
     title = yt.title
